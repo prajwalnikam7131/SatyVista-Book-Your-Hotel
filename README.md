@@ -2,7 +2,7 @@
 
 StayVista is a hotel booking web application built using modern web technologies. This project follows the MVC (Model-View-Controller) framework and includes CRUD operations for managing hotels and reviews.
 
-# What is the meaning of StayVista:
+## Why did I choose the name StayVista ?
 
 1. Stay: Refers to the act of lodging or residing in a place temporarily, which is central to the concept of vacation rentals and accommodations.
 
