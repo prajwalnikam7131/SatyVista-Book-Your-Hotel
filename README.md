@@ -45,6 +45,7 @@ StayVista is a hotel booking web application built using modern web technologies
      
      <!-- for images -->
      CLOUDINARY_CLOUD_NAME=your_cloud_name,
+     
      CLOUDINARY_API_KEY=your_cloud_key,
      CLOUDINARY_API_SECRET=your_cloud_secret
      
