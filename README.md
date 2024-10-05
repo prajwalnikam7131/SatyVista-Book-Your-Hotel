@@ -71,4 +71,4 @@ StayVista is a hotel booking web application built using modern web technologies
 
 # Note: User.plugin ->
 
-> automatic Passport-Local Mongoose will add a username, hash and salt field to store the username, the hashed password and the salt value.
+> Automatic ‘Passport-Local Mongoose’ will add a username, hashed password field, and salt value. You don’t need to add these fields to the schema.
