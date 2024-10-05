@@ -2,7 +2,7 @@
 
 StayVista is a hotel booking web application built using modern web technologies. This project follows the MVC (Model-View-Controller) framework and includes CRUD operations for managing hotels and reviews.
 
-# What is the meaning of StayVista:
+## Why did I choose the name StayVista ?
 
 1. Stay: Refers to the act of lodging or residing in a place temporarily, which is central to the concept of vacation rentals and accommodations.
 
@@ -44,8 +44,10 @@ StayVista is a hotel booking web application built using modern web technologies
    - Add the following variables:
      
      <!-- for images -->
-     CLOUDINARY_CLOUD_NAME=your_cloud_name
-     CLOUDINARY_API_KEY=your_cloud_key
+     CLOUDINARY_CLOUD_NAME=your_cloud_name,
+     
+     CLOUDINARY_API_KEY=your_cloud_key,
+     
      CLOUDINARY_API_SECRET=your_cloud_secret
      
      <!-- for database -->
@@ -69,4 +71,4 @@ StayVista is a hotel booking web application built using modern web technologies
 
 # Note: User.plugin ->
 
-> automatic Passport-Local Mongoose will add a username, hash and salt field to store the username, the hashed password and the salt value.
+> Automatic ‘Passport-Local Mongoose’ will add a username, hashed password field, and salt value. You don’t need to add these fields to the schema.
