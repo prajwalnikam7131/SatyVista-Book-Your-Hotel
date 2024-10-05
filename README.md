@@ -4,7 +4,7 @@ StayVista is a hotel booking web application built using modern web technologies
 
 ## Live Demo
 
-You can view the live version of the project [here]([https://your-live-link.com](https://satyvista-book-your-hotel.onrender.com/listings)).
+You can view the live version of the project [here](https://satyvista-book-your-hotel.onrender.com/listings)
 
 ## Why did I choose the name StayVista ?
 
