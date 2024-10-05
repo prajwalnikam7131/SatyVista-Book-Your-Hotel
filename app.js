@@ -51,7 +51,7 @@ app.set('view engine', 'ejs');
 
 // Mongo Session store:
 const store = MongoStore.create({
-    mongoUrl: db,
+    mongoUrl: process.env.MONGODB_URL,
     crypto: {
         secret: process.env.MONGO_SECRET,
     },
