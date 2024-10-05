@@ -1,0 +1,28 @@
+<div class="container container-fluid pb-4">
+    <h2 class="mt-2 mb-2">Search Listings</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+        <% if (filterListings.length===0) { %>
+            <div class="col-12">
+                <p class="text-center fs-5">No listings found.</p>
+            </div>
+            <% } else { %>
+                <% for (const listing of filterListings) { %>
+                    <div class="col">
+                        <a href="/listings/<%= listing._id %>" class="listing-link text-decoration-none">
+                            <div class="card custom-card">
+                                <img src="<%= listing.image.url %>" class="card-img-top custom-card-img" alt="img"
+                                    style="height: 20rem;">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 1.1rem; margin: 0;"><b>
+                                            <%= listing.title %>
+                                        </b></p>
+                                    <p class="card-text">₹<%= listing.price %> &#47;night</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% } %>
+                        <% } %>
+
+    </div>

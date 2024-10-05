@@ -1,0 +1,100 @@
+<div class="container">
+    <h3 class="my-2">About StayVista</h3>
+    <div class="card about-card">
+        <h5 class="card-header fs-4">StayVista Project Overview</h5>
+        <div class="card-body">
+            <p class="card-text">StayVista is a hotel booking web application built using a variety of modern web
+                technologies and libraries. The project follows the MVC (Model-View-Controller) framework and includes
+                CRUD (Create, Read, Update, Delete) operations for managing hotels and reviews.</p>
+        </div>
+    </div>
+
+    <div class="card about-card my-3">
+        <h5 class="card-header fs-4">Project Structure:</h5>
+        <div class="card-body">
+            <p class="card-text">
+            <ul class="about-unoderlist">
+                <li><strong>Models: </strong>Define schemas for hotels, reviews, and users using Mongoose.</li>
+                <li><strong>Views: </strong>EJS templates for rendering dynamic content.</li>
+                <li><strong>Controllers: </strong>Handle the logic for CRUD operations and user authentication.</li>
+                <li><strong>Routes: </strong>Define endpoints for various functionalities (e.g., /hotels, /reviews,
+                    /users).</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="card about-card my-3">
+        <h5 class="card-header fs-4">Additional Features:</h5>
+        <div class="card-body">
+            <p class="card-text">
+            <ul class="about-unoderlist">
+                <li><strong>User Authentication: </strong>Secure login and registration using Passport.js.</li>
+                <li><strong>Session Management: </strong> Maintain user sessions with express-session.</li>
+                <li><strong>Flash Messages: </strong>Provide feedback to users with connect-flash.</li>
+                <li><strong>Form Validation: </strong> Ensure data integrity with Joi.</li>
+                <li><strong>Method Override: </strong>Support HTTP verbs like PUT and DELETE in forms.</li>
+                <li><strong>Synchronous Errors: </strong>Display error messages for form validation and other synchronous operations.</li>
+                <li><strong>Asynchronous Errors: </strong>Handle and display errors for asynchronous operations like database queries and API calls.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="card about-card my-3">
+        <h5 class="card-header fs-4">Key Functionalities:</h5>
+        <div class="card-body">
+            <p class="card-text">
+            <ol class="about-unoderlist">
+                <li><strong>Add New Hotel:</strong>
+                    <ul style="list-style-type:disc;">
+                        <li>Users can add new hotels with details such as name, location, price, and images.</li>
+                        <li>Images are uploaded and stored using Cloudinary.</li>
+                    </ul>
+                </li>
+                <li><strong>Review Hotel:</strong>
+                    <ul style="list-style-type:disc;">
+                        <li>Users can leave reviews for hotels, including ratings and comments.</li>
+                        <li>Reviews are associated with specific hotels and displayed on the hotel's detail page.</li>
+                    </ul>
+                </li>
+                <li><strong>Delete Review:</strong>
+                    <ul style="list-style-type:disc;">
+                        <li>Users can delete their own reviews.</li>
+                        <li>Admins can manage and delete inappropriate reviews.</li>
+                    </ul>
+                </li>
+                <li><strong>Delete Hotels:</strong>
+                    <ul style="list-style-type:disc;">
+                        <li>Admins can delete hotels from the database.</li>
+                        <li>Deleting a hotel also removes all associated reviews.</li>
+                    </ul>
+                </li>
+            </ol>
+
+
+            </p>
+        </div>
+    </div>
+
+    <div class="card about-card my-3">
+        <h5 class="card-header fs-4">Technologies Used:</h5>
+        <div class="card-body">
+            <p class="card-text">
+            <ul class="about-unoderlist">
+                <li><strong>Frontend: </strong>HTML, CSS, JavaScript, Bootstrap</li>
+                <li><strong>Backend: </strong>Node.js, Express.js</li>
+                <li><strong>Templating Engine: </strong>EJS (Embedded JavaScript)</li>
+                <li><strong>Database: </strong>MongoDB (using Mongoose)</li>
+                <li><strong>Authentication: </strong>Passport.js (with passport-local and passport-local-mongoose)</li>
+                <li><strong>File Uploads: </strong>Multer and Cloudinary</li>
+                <li><strong>Environment Variables: </strong>dotenv</li>
+                <li><strong>Session Management: </strong>express-session</li>
+                <li><strong>Form Validation: </strong>Joi Validation</li>
+                <li><strong>Flash Messages: </strong>connect-flash</li>
+                <li><strong>Method Override: </strong>method-override</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>

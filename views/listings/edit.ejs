@@ -1,0 +1,51 @@
+<div class="container col-8 new-container">
+    <h2 class="mt-2 mb-3">Update Form</h2>
+    <form method="post" action="/listings/<%= listing._id %>?_method=PUT" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="listing[title]" value="<%= listing.title %>" id="title"
+                class="form-control form-control-lg form-control-sm border-secondary" required>
+            <div class="invalid-feedback fs-5">title required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control form-control-lg form-control-sm border-secondary"
+                id="exampleFormControlTextarea1" rows="3" required><%= listing.description %></textarea>
+            <div class="invalid-feedback fs-5">description required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload New Image</label>
+            <input type="file" name="listing[image]" placeholder="image or Url" id="image"
+                class="form-control form-control-lg form-control-sm border-secondary">
+        </div>
+
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="listing[location]" id="location" value="<%= listing.location %>"
+                class="form-control form-control-lg form-control-sm border-secondary" required>
+            <div class="invalid-feedback fs-5">location required</div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" name="listing[price]" id="price" value="<%= listing.price %>"
+                    class="form-control form-control-lg form-control-sm border-secondary" required>
+                <div class="invalid-feedback fs-5">price required</div>
+            </div>
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="listing[country]" id="country" value="<%= listing.country %>"
+                    class="form-control form-control-lg form-control-sm border-secondary" required>
+                <div class="invalid-feedback fs-5">country required</div>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <button type="submit" class="btn btn-primary">Update Listing</button>
+        </div>
+    </form>
+</div>

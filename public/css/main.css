@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main {
+    flex: 1;
+    background-color: #F1F6F9;
+}
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* main app logo */
+.custom-icon {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    margin: 0 1rem 0 0;
+    text-decoration: none;
+    background: linear-gradient(#9BA4B5, #F1F6F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.ssl-btn {
+    background-color: #F1F6F9;
+    color: black;
+}
+
+.ssl-btn:hover {
+    background-color: #f1f6f993;
+}
+
+/* Index page card */
+.custom-card {
+    border: none;
+    background-color: #DDE6ED;
+}
+
+.custom-card-img {
+    border-radius: 0.5rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.listing-link:hover {
+    opacity: 0.88;
+}
+
+/* custom-show-page */
+.custom-show-page {
+    width: 60%;
+    height: 25rem;
+    margin: 4px auto 2px auto;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.custom-body-show-page {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.custom-btns-show-page {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* review form textArea */
+.review-form {
+    width: 40%;
+    min-height: 10rem !important;
+}
+
+/* review container */
+.review-container {
+    width: 90%;
+    margin: 0 auto 2rem auto;
+}
+
+/* review card body */
+.review-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+}
+
+/* review single card */
+.single-review-card {
+    flex-basis: 20rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 1rem auto;
+}
+
+/* confirm pop-up */
+.confirm-box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.message-box {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    line-height: 2;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-box {
+    margin-top: 55px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #95a5a6;
+    color: #ffffff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.cancel-btn:hover {
+    background-color: #7f8c8d;
+}
+
+
+/* custom-footer */
+.custom-footer {
+    background-color: #212A3E;
+    color: #ffffff;
+    padding-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-icon a {
+    font-size: 1.5rem;
+    margin: 0.3rem 0;
+}
+
+
+/* price spin arrow remove */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* flash message */
+.alert {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+}
+
+.alert.fade-out {
+    transform: translateY(-20px);
+    /* Adjust as needed */
+    opacity: 0;
+}
+
+/* about page */
+.about-card {
+    border: 1px solid black;
+}
+
+.about-card h5 {
+    border-bottom: 1px solid black;
+}
+
+.about-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.about-unoderlist li {
+    font-size: 1.1rem;
+}
+
+.custom-underline {
+    text-decoration: underline 1px black;
+}
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+    .custom-small-screen-navbar {
+        width: 100%;
+    }
+
+    /* for small-screen */
+    .new-container {
+        width: 100vw;
+    }
+
+    /* custom-show-page */
+    .custom-show-page {
+        width: 90%;
+        height: 20rem;
+        border-radius: 0.6rem;
+    }
+
+    .custom-body-show-page {
+        width: 90%;
+    }
+
+    .custom-btns-show-page {
+        width: 90%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* review form textArea */
+    .review-form {
+        width: 100%;
+    }
+
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+
+    .custom-small-screen-navbar {
+        width: 100%;
+    }
+
+}
+
+/* laptop */
+@media only screen and (min-width: 992px) {}

@@ -1,0 +1,26 @@
+<!-- flash message for success -->
+<% if(success && success.length){ %>
+    <div class="alert alert-success alert-dismissible fade show col-10 mx-auto text-center fs-5" role="alert"
+        id="myAlert">
+        <%= success %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                onclick="fadeOutAlert()"></button>
+    </div>
+    <% } %>
+
+        <!-- flash message for error -->
+        <% if(error && error.length){ %>
+            <div class="alert alert-danger alert-dismissible fade show col-10 mx-auto text-center fs-5" role="alert">
+                <%= error %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="fadeOutAlert()"></button>
+            </div>
+            <% } %>
+
+
+
+                <script>
+                    function fadeOutAlert() {
+                        const alert = document.getElementById('myAlert');
+                        alert.classList.add('fade-out');
+                    }
+                </script>

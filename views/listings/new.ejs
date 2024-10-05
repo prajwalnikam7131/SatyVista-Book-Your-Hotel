@@ -1,0 +1,60 @@
+<div class="container col-8 new-container">
+    <h2 class="mt-3 mb-4">Create New Form</h2>
+
+    <form method="post" action="/listings" enctype="multipart/form-data" spellcheck="true" class="needs-validation" novalidate>
+
+        <div class="mb-3">
+            <label for="title" class="form-label fs-5">Title</label>
+            <input type="text" name="listing[title]" placeholder="title" id="title"
+                class="form-control form-control-lg form-control-sm border-secondary" required>
+            <div class="invalid-feedback fs-5">title required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label fs-5">Description</label>
+            <textarea name="listing[description]" class="form-control border-secondary" id="exampleFormControlTextarea1"
+                rows="4"
+                placeholder="Example: Welcome to our stylish 2-bedroom apartment in the heart of downtown. Perfect for city explorers and..."
+                required></textarea>
+            <div class="invalid-feedback fs-5">description required</div>
+        </div>
+
+        <!-- <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input type="text" name="listing[image]" placeholder="image or URL" id="image"
+                class="form-control form-control-lg form-control-sm border-secondary">
+        </div> -->
+
+        <div class="mb-3">
+            <label for="image" class="form-label fs-5">Upload listing image</label>
+            <input type="file" name="listing[image]" placeholder="image or URL" id="image"
+                class="form-control form-control-lg form-control-sm border-secondary">
+        </div>
+
+        <div class="mb-3">
+            <label for="location" class="form-label fs-5">Location</label>
+            <input type="text" name="listing[location]" id="location" placeholder="enter location"
+                class="form-control form-control-lg form-control-sm border-secondary" required>
+            <div class="invalid-feedback fs-5">location required</div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label fs-5">Price</label>
+                <input type="number" name="listing[price]" id="price" placeholder="₹ 1200"
+                    class="form-control form-control-lg form-control-sm border-secondary" required>
+                <div class="invalid-feedback fs-5">price required</div>
+            </div>
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label fs-5">Country</label>
+                <input type="text" name="listing[country]" id="country" placeholder="Country"
+                    class="form-control form-control-lg form-control-sm border-secondary" required>
+                <div class="invalid-feedback fs-5">country required</div>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <button type="submit" class="btn btn-primary">Add Listing</button>
+        </div>
+    </form>
+</div>
