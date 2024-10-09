@@ -1,3 +1,9 @@
+## Live demo
+
+> Note: Please be patient while the website is loading.
+
+you can view the live version of the project  [here](https://satyvista-book-your-hotel.onrender.com/listings)
+
 # StayVista
 
 StayVista is a hotel booking web application built using modern web technologies. This project follows the MVC (Model-View-Controller) framework and includes CRUD operations for managing hotels and reviews.
