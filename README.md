@@ -8,6 +8,10 @@ you can view the live version of the project  [here](https://satyvista-book-your
 
 StayVista is a hotel booking web application built using modern web technologies. This project follows the MVC (Model-View-Controller) framework and includes CRUD operations for managing hotels and reviews.
 
+## Live Demo
+
+You can view the live version of the project [here](https://satyvista-book-your-hotel.onrender.com/listings)
+
 ## Why did I choose the name StayVista ?
 
 1. Stay: Refers to the act of lodging or residing in a place temporarily, which is central to the concept of vacation rentals and accommodations.
