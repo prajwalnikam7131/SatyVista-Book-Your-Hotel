@@ -72,7 +72,7 @@ you can view the live version of the project  [here](https://satyvista-book-your
 
 >   nodemon app.js OR node app.js
    
-2. Open your browser and navigate to `http://localhost:8080`.
+2. Open your browser and navigate to `http://localhost:8080/listings`.
 
 
 # Note: User.plugin ->
